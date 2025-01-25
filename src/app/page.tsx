@@ -1,7 +1,7 @@
-'use client';
+/* eslint-disable @next/next/no-img-element */
+'use client';	
 
 import { Avatar, ProgressRing, Slider, Switch, Segment } from '@skeletonlabs/skeleton-react';
-import Image from 'next/image';
 import { useState } from 'react';
 
 // Common Class Lists
@@ -157,9 +157,7 @@ export default function Home() {
 							className="card preset-filled-surface-100-900 border-[1px] border-surface-200-800 card-hover divide-surface-200-800 block max-w-md divide-y overflow-hidden"
 						>
 							<header>
-								<Image
-									width={450}
-									height={190}
+								<img
 									src="https://images.unsplash.com/photo-1463171515643-952cee54d42a?q=80&w=450&h=190&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 									className="aspect-[21/9] w-full grayscale hue-rotate-90"
 									alt="banner"
@@ -339,19 +337,10 @@ export default function Home() {
 				{/* Switch */}
 				{/* https://skeleton.dev/docs/components/switch/react */}
 				<section className="space-y-4">
-					<h3 className="h3">Switches</h3>
+					<h3 className="h3">Switch</h3>
 					<div className={previewCardClasses}>
 						<div className="flex space-x-8">
 							<Switch name="example" />
-							<Switch name="icons" controlActive="bg-secondary-500" inactiveChild={<span>🌙</span>} activeChild={<span>☀️</span>} />
-							<Switch
-								name="compact"
-								controlWidth="w-12"
-								controlActive="preset-filled-tertiary-500"
-								compact
-								inactiveChild={<span>💀</span>}
-								activeChild={<span>👨</span>}
-							/>
 						</div>
 					</div>
 				</section>
@@ -490,99 +479,27 @@ export default function Home() {
 						<section className="grid grid-cols-2 gap-4 md:grid-cols-4">
 							{/* Column */}
 							<div className="grid gap-4">
-								<Image
-									width={220}
-									height={320}
-									className="bg-surface-500 rounded-container"
-									src="https://picsum.photos/220/320?random=1"
-									alt="Random"
-								/>
-								<Image
-									width={220}
-									height={120}
-									className="bg-surface-500 rounded-container"
-									src="https://picsum.photos/220/120?random=2"
-									alt="Random"
-								/>
-								<Image
-									width={220}
-									height={280}
-									className="bg-surface-500 rounded-container"
-									src="https://picsum.photos/220/280?random=3"
-									alt="Random"
-								/>
+								<img className="bg-surface-500 rounded-container" src="https://picsum.photos/220/320?random=1" alt="Random" />
+								<img className="bg-surface-500 rounded-container" src="https://picsum.photos/220/120?random=2" alt="Random" />
+								<img className="bg-surface-500 rounded-container" src="https://picsum.photos/220/280?random=3" alt="Random" />
 							</div>
 							{/* Column */}
 							<div className="grid gap-4">
-								<Image
-									width={220}
-									height={300}
-									className="bg-surface-500 rounded-container"
-									src="https://picsum.photos/220/300?random=4"
-									alt="Random"
-								/>
-								<Image
-									width={220}
-									height={280}
-									className="bg-surface-500 rounded-container"
-									src="https://picsum.photos/220/280?random=5"
-									alt="Random"
-								/>
-								<Image
-									width={220}
-									height={140}
-									className="bg-surface-500 rounded-container"
-									src="https://picsum.photos/220/140?random=6"
-									alt="Random"
-								/>
+								<img className="bg-surface-500 rounded-container" src="https://picsum.photos/220/300?random=4" alt="Random" />
+								<img className="bg-surface-500 rounded-container" src="https://picsum.photos/220/280?random=5" alt="Random" />
+								<img className="bg-surface-500 rounded-container" src="https://picsum.photos/220/140?random=6" alt="Random" />
 							</div>
 							{/* Column */}
 							<div className="grid gap-4">
-								<Image
-									width={220}
-									height={280}
-									className="bg-surface-500 rounded-container"
-									src="https://picsum.photos/220/280?random=7"
-									alt="Random"
-								/>
-								<Image
-									width={220}
-									height={320}
-									className="bg-surface-500 rounded-container"
-									src="https://picsum.photos/220/320?random=8"
-									alt="Random"
-								/>
-								<Image
-									width={220}
-									height={140}
-									className="bg-surface-500 rounded-container"
-									src="https://picsum.photos/220/140?random=9"
-									alt="Random"
-								/>
+								<img className="bg-surface-500 rounded-container" src="https://picsum.photos/220/280?random=7" alt="Random" />
+								<img className="bg-surface-500 rounded-container" src="https://picsum.photos/220/320?random=8" alt="Random" />
+								<img className="bg-surface-500 rounded-container" src="https://picsum.photos/220/140?random=9" alt="Random" />
 							</div>
 							{/* Column */}
 							<div className="grid gap-4">
-								<Image
-									width={220}
-									height={320}
-									className="bg-surface-500 rounded-container"
-									src="https://picsum.photos/220/320?random=10"
-									alt="Random"
-								/>
-								<Image
-									width={220}
-									height={140}
-									className="bg-surface-500 rounded-container"
-									src="https://picsum.photos/220/140?random=11"
-									alt="Random"
-								/>
-								<Image
-									width={220}
-									height={140}
-									className="bg-surface-500 rounded-container"
-									src="https://picsum.photos/220/280?random=12"
-									alt="Random"
-								/>
+								<img className="bg-surface-500 rounded-container" src="https://picsum.photos/220/320?random=10" alt="Random" />
+								<img className="bg-surface-500 rounded-container" src="https://picsum.photos/220/140?random=11" alt="Random" />
+								<img className="bg-surface-500 rounded-container" src="https://picsum.photos/220/280?random=12" alt="Random" />
 							</div>
 						</section>
 					</div>
