@@ -1,5 +1,8 @@
 import type { Config } from "tailwindcss";
 
+// https://github.com/tailwindlabs/tailwindcss-forms
+import forms from '@tailwindcss/forms';
+
 import { skeleton, contentPath } from "@skeletonlabs/skeleton/plugin";
 import * as themes from "@skeletonlabs/skeleton/themes";
 
@@ -19,6 +22,7 @@ export default {
     },
   },
   plugins: [
+    forms,
     skeleton({
       // NOTE: each theme included will increase the size of your CSS bundle
       themes: [ themes.cerberus, themes.rose ]
