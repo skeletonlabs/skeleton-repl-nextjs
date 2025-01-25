@@ -1,0 +1,11 @@
+{
+	"useTabs": true,
+	"singleQuote": true,
+	"trailingComma": "none",
+	"printWidth": 140,
+	"overrides": [
+		{
+			"files": "*.tsx"
+		}
+	]
+}
