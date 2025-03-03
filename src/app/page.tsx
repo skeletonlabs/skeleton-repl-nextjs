@@ -1,18 +1,20 @@
 /* eslint-disable @next/next/no-img-element */
-'use client';	
+'use client';
 
-import { Avatar, ProgressRing, Slider, Switch, Segment } from '@skeletonlabs/skeleton-react';
 import { useState } from 'react';
+import { Avatar, ProgressRing, Slider, Switch, Segment } from '@skeletonlabs/skeleton-react';
 
 // Common Class Lists
 const headerClasses = 'space-y-2 pb-2 border-b-2 border-surface-800-200';
 const previewCardClasses = 'card bg-noise bg-surface-50-950 border-[1px] border-surface-200-800 flex justify-center items-center p-8';
 export default function Home() {
-	const [color, setColor] = useState('#bada55');
 	const [size, setSize] = useState('xs');
+	const [color, setColor] = useState('#bada55');
+
 	const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
 		setColor(event.target.value);
 	};
+
 	return (
 		<div>
 			<header className="sticky top-0 z-50 bg-surface-50-950 shadow-xl">
@@ -310,7 +312,7 @@ export default function Home() {
 					<h3 className="h3">Segment Controls</h3>
 					<div className={previewCardClasses}>
 						<div className="flex items-center md:space-x-16">
-							<Segment name="size" value={size} onValueChange={setSize}>
+							<Segment name="size" value={size} onValueChange={(e) => setSize(e.value!)}>
 								<Segment.Item value="xs">xs</Segment.Item>
 								<Segment.Item value="sm">sm</Segment.Item>
 								<Segment.Item value="md">md</Segment.Item>
